@@ -17,12 +17,13 @@ idur-pkg tmp tl-l
 cd /tmp/$(idur-pkg dir-tmp tl-l)
 
 idur-pkg download https://tlauncher.org/jar
-idur-pkg uncompress TLauncher-*
+mv jar jar.zip
+idur-pkg uncompress jar.zip
 
 idur-pkg rm /opt/TLauncher/
 mkdir -p /opt/TLauncher/
 
-cp TLauncher-*.jar /opt/TLauncher/tlauncher.jar
+cp *.jar /opt/TLauncher/tlauncher.jar
 
 idur-pkg read https://raw.githubusercontent.com/idur-package/media/7a3f426f95230de9658774a7e2701e2cca7221eb/tlauncher/tlauncher > /usr/bin/tlauncher
 chmod a+x /usr/bin/tlauncher
