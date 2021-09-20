@@ -19,12 +19,12 @@ uncompress tarballs and zip with one command.
 Install="""
 
 idur-pkg read https://raw.githubusercontent.com/Can202/dunpress/v0.1/src/dumpress.py > /usr/bin/dunpress
-chmod a+x /usr/bin/dumpress
+chmod a+x /usr/bin/dunpress
 
 """
 
 Remove="""
 
-idur-pkg rm /usr/bin/dumpress
+idur-pkg rm /usr/bin/dunpress
 
 """
