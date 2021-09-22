@@ -1,4 +1,4 @@
-Name="minetest_game"
+Name="minetest-game"
 Version="5.4.1"
 
 Maintainer="Can202"
@@ -10,7 +10,7 @@ Arch="all"
 License="https://raw.githubusercontent.com/minetest/minetest/master/LICENSE.txt"
 Depends=["dialog", "git", "g++", "make", "libc6-dev", "cmake", "libpng-dev", "libjpeg-dev", "libxxf86vm-dev", "libgl1-mesa-dev", "libsqlite3-dev", "libogg-dev", "libvorbis-dev", "libopenal-dev", "libcurl4-gnutls-dev", "libfreetype6-dev", "zlib1g-dev", "libgmp-dev", "libjsoncpp-dev", "libzstd-dev"]
 idurDepends=["idur-pkg"]
-Conflict=["minetest_game"]
+Conflict=["minetest-game"]
 Description="""
 
 description here
@@ -38,8 +38,8 @@ then
     echo "#!/bin/bash
     cd /opt/minetest/
     ./bin/minetest
-    " > /usr/bin/minetest_game
-    chmod a+x /usr/bin/minetest_game
+    " > /usr/bin/minetest-game
+    chmod a+x /usr/bin/minetest-game
     chmod a+rwx -R /opt/minetest/
 
 else
