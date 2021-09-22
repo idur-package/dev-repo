@@ -12,8 +12,7 @@ Depends=["dialog", "git", "g++", "make", "libc6-dev", "cmake", "libpng-dev", "li
 idurDepends=["idur-pkg"]
 Conflict=["minetest-game"]
 Description="""
-
-description here
+A sandbox open source game. Minecraft Inspired.
 
 """
 
@@ -41,6 +40,13 @@ then
     " > /usr/bin/minetest-game
     chmod a+x /usr/bin/minetest-game
     chmod a+rwx -R /opt/minetest/
+    echo "[Desktop Entry]
+Name=Minetest
+Exec=minetest-game
+Icon=/opt/minetest/games/minetest_game/menu/icon.png
+Type=Application
+Categories=Game" > /usr/share/applications/minetest-game.desktop
+    chmod a+x /usr/share/applications/minetest-game.desktop
 
 else
     clear
@@ -48,7 +54,7 @@ else
 fi
 
 
-
+idur-pkg rm-tmp minetest
 
 
 """
@@ -57,5 +63,6 @@ Remove="""
 
 idur-pkg rm /opt/minetest/
 idur-pkg rm /usr/bin/minetest-game
+idur-pkg rm /usr/share/applications/minetest-game.desktop
 
 """
