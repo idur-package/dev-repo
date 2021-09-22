@@ -40,6 +40,7 @@ Exec=telegram
 Type=Application
 Categories=Network" > /usr/share/applications/telegram.desktop
 chmod a+x /usr/share/applications/telegram.desktop
+chmod a+rwx -R /opt/Telegram/
 
 idur-pkg rm-tmp tl
 """
