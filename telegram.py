@@ -38,6 +38,7 @@ echo "[Desktop Entry]
 Name=Telegram
 Exec=telegram
 Type=Application
+Icon=/opt/Telegram/icon.png
 Categories=Network" > /usr/share/applications/telegram.desktop
 chmod a+x /usr/share/applications/telegram.desktop
 chmod a+rwx -R /opt/Telegram/
