@@ -20,7 +20,7 @@ description here
 Install="""
 
 dialog --title "Compile minetest" --yesno "This version is compiled" 0 0
-if [ $? = 1 ]
+if [ $? = 0 ]
 then
     idur-pkg tmp minetest
     cd $(idur-pkg dp minetest)
