@@ -4,7 +4,7 @@ Version="v0.1-beta"
 Maintainer="Can202"
 Contact="mgoopazo@gmail.com"
 
-Arch="all"
+Arch="x86_64"
 
 Time="short"
 
@@ -19,7 +19,7 @@ written in pure C with SDL.
 
 """
 
-Install="""
+Install64="""
 
 idur-pkg tmp dr
 cd $(idur-pkg dp dr)
