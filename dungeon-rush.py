@@ -32,7 +32,7 @@ cd /opt/dungeon-rush/
 ./dungeon_rush" > /usr/bin/dungeon-rush
 idur-pkg exec /usr/bin/dungeon-rush
 
-idur-pkg https://raw.githubusercontent.com/rapiz1/DungeonRush/v1.1-beta/dungeonrush.png
+idur-pkg download https://raw.githubusercontent.com/rapiz1/DungeonRush/v1.1-beta/dungeonrush.png
 cp dungeonrush.png /opt/dungeon-rush/dungeonrush.png
 
 echo "[Desktop Entry]
